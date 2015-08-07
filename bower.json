@@ -9,7 +9,6 @@
   "dependencies": {
     "jquery": "latest",
     "bootstrap": "latest",
-    "bootswatch": "latest",
     "lesshat": "latest"
   }
 }
