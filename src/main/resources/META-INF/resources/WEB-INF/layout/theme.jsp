@@ -16,13 +16,13 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700' rel='stylesheet' type='text/css' />
 	<jsp:include page="/WEB-INF/include/style.jsp" />
 </head>
-<body data-view="${view}">
+<body class="sidebar-fixed sidebar-max" data-view="${view}">
 
-	<div id="header">
-		<jsp:include page="/WEB-INF/layout/blank/header.jsp" />
+	<div id="sidebar">
+		<jsp:include page="/WEB-INF/layout/theme/sidebar.jsp" />
 	</div>
 
-	<div id="body">
+	<div id="body" class="container-fluid">
 		<tiles:insertAttribute name="body" />
 	</div>
 

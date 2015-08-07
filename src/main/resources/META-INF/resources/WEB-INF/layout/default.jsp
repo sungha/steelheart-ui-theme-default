@@ -10,9 +10,10 @@
 
 
 <!doctype html>
-<html class="no-js" lang="${lang}">
+<html lang="${lang}">
 <head>
 	<jsp:include page="/WEB-INF/include/meta.jsp" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700' rel='stylesheet' type='text/css' />
 	<jsp:include page="/WEB-INF/include/style.jsp" />
 </head>
 <body class="sidebar-fixed sidebar-max" data-view="${view}">
