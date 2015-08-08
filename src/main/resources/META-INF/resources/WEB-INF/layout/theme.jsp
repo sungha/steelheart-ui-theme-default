@@ -5,7 +5,7 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 
 
-<c:if test="${empty theme}"><c:set var="theme" scope="request" value="default" /></c:if>
+<c:if test="${empty theme}"><c:set var="theme" scope="request" value="theme" /></c:if>
 <c:set var="view" scope="request"><tiles:getAsString name="view" /></c:set>
 
 
@@ -13,8 +13,8 @@
 <html lang="${lang}">
 <head>
 	<jsp:include page="/WEB-INF/include/meta.jsp" />
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700' rel='stylesheet' type='text/css' />
 	<jsp:include page="/WEB-INF/include/style.jsp" />
+	<title>theme</title>
 </head>
 <body class="sidebar-fixed sidebar-max" data-view="${view}">
 
@@ -23,6 +23,7 @@
 	</div>
 
 	<div id="body" class="container-fluid">
+	....
 		<tiles:insertAttribute name="body" />
 	</div>
 

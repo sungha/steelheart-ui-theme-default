@@ -1,5 +1,54 @@
+@import "../../../variables.less";
 
 table.table {
 	margin-top: 4px;
 	margin-bottom: 12px;
+
+	th {
+		font-weight: bold;
+		text-transform: uppercase;
+		vertical-align: bottom;
+		letter-spacing: .5px;
+	}
+
+	td {
+	}
+
+	&.table-default {
+		._table-variant(@color-default);
+	}
+	&.table-primary {
+		._table-variant(@color-primary);
+	}
+	&.table-success {
+		._table-variant(@color-success);
+	}
+	&.table-info {
+		._table-variant(@color-info);
+	}
+	&.table-warning {
+		._table-variant(@color-warning);
+	}
+	&.table-danger {
+		._table-variant(@color-danger);
+	}
+	&.table-inverse {
+		._table-variant(@color-inverse);
+	}
 }
+
+
+
+
+
+._table-variant(@color) {
+	th {
+		background-color: darken(@color,15%);
+		color: @text-color;
+	}
+	td {
+		background-color: @color;
+	}
+}
+
+
