@@ -11,7 +11,7 @@ bootstrap default table
 <hr />
 
 
-<c:forTokens var="color" items="default,primary,success,warning,danger,inverse" delims=",">
+<c:forTokens var="color" items="default,primary,success,info,warning,danger,inverse" delims=",">
 	<div class="panel panel-${color}">
 		<div class="panel-heading">
 			<h4 class="panel-title">Basic Styling: ${color}</h4>
