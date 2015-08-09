@@ -4,22 +4,22 @@
 	&.btn-square {
 		border-radius: 0;
 	}
-	
-	
+
+
 	&.btn-rounded {
 		border-radius: 30px;
 	}
-	
+
 	&.btn-outlined {
 		border-width: 2px;
 		background-color: #fff;
 		color: #000;
 	}
-	
-	
+
+
 	&.btn-embossed {
 		box-shadow: 0 4px #ab3c3c;
-		
+
 		&.btn-primary {
 			box-shadow: 0 4px darken(@brand-primary, 20%);
 		}
@@ -43,24 +43,3 @@
 
 }
 
-
-
-
-@colors: 'default', 'danger', 'primary', 'info', 'warning', 'danger', 'success';
-
-.example_module {
-	.loop(@i: length(@colors)) when (@i > 0) {
-		@name: e(extract(@colors, @i));
-		
-		&.btn-@{name} {
-			
-		}
-		
-		.loop((@i - 1));
-    }
-	.loop;
-}
-
-.btn:focus {
-	outline: none;
-}

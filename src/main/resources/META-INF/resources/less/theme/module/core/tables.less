@@ -1,26 +1,47 @@
 @import "../../../variables.less";
 
+
 table.table {
 	margin-top: 4px;
 	margin-bottom: 12px;
 
+	&.table-nomargin {
+		margin: 0;
+	}
+
+	th {
+		font-weight: bold;
+		text-transform: uppercase;
+		vertical-align: bottom;
+		letter-spacing: .5px;
+		color: @text-color;
+	}
+
 	.each(@i) when (@i > 0) {
-		@name: extract(@colors, @i);
-		@color: "color-@{name}";
+		@name: extract(@brands, @i);
+		@color: "brand-@{name}";
 
 		&.table-@{name} {
 			th {
-				font-weight: bold;
-				text-transform: uppercase;
-				vertical-align: bottom;
-				letter-spacing: .5px;
-				background-color: darken(@@color,15%);
-				color: @text-color;
+				background-color: lighten(@@color, 15%);
+			}
+			tr {
+				td {
+					background-color: lighten(@@color, 35%);
+				}
+			}
+
+			&.table-striped {
+				tr:nth-child(2n) {
+					td {
+						background-color: lighten(@@color, 30%);
+					}
+				}
 			}
 		}
 
 		.each(@i - 1);
-	}.each(length(@colors));
+	}.each(length(@brands));
 
 }
 
