@@ -9,6 +9,8 @@
   "dependencies": {
     "jquery": "latest",
     "bootstrap": "latest",
-    "lesshat": "latest"
+    "lesshat": "latest",
+    "bootswatch": "latest",
+    "open-sans-fontface": "latest"
   }
 }

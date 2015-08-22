@@ -19,12 +19,12 @@
 	<ul id="sidemenu" class="nav nav-stacked">
 		<li class="panel">
 			<a href="${link}/index">
-				<i class="fa fa-home"></i> Theme Home
+				<i class="fa fa-fw fa-lg fa-home"></i> Theme Home
 			</a>
 		</li>
 		<li class="panel">
 			<a href="#sidemenu-calendar" data-toggle="collapse" data-parent="#sidemenu">
-				<i class="fa fa-calendar"></i> Calendar
+				<i class="fa fa-fw fa-lg fa-calendar"></i> Calendar
 				<i class="pull-right fa fa-chevron-circle-right"></i>
 			</a>
 			<ul id="sidemenu-calendar" class="nav nav-stacked collapse">
@@ -35,7 +35,7 @@
 		</li>
 		<li class="panel">
 			<a href="#sidemenu-chart" data-toggle="collapse" data-parent="#sidemenu">
-				<i class="fa fa-bar-chart-o"></i> Chart
+				<i class="fa fa-fw fa-lg fa-bar-chart-o"></i> Chart
 				<i class="pull-right fa fa-chevron-circle-right"></i>
 			</a>
 			<ul id="sidemenu-chart" class="nav nav-stacked collapse ${view.startsWith('/theme/chart') ? 'in' : ''}">
@@ -65,7 +65,7 @@
 		</li>
 		<li class="panel">
 			<a href="#sidemenu-element" data-toggle="collapse" data-parent="#sidemenu">
-				<i class="fa fa-cogs"></i> Element
+				<i class="fa fa-fw fa-lg fa-cogs"></i> Element
 				<i class="pull-right fa fa-chevron-circle-right"></i>
 			</a>
 			<ul id="sidemenu-element" class="nav nav-stacked collapse">
@@ -79,7 +79,7 @@
 		</li>
 		<li class="panel">
 			<a href="#sidemenu-form" data-toggle="collapse" data-parent="#sidemenu">
-				<i class="fa fa-tasks"></i> Form
+				<i class="fa fa-fw fa-lg fa-tasks"></i> Form
 				<i class="pull-right fa fa-chevron-circle-right"></i>
 			</a>
 			<ul id="sidemenu-form" class="nav nav-stacked collapse">
@@ -98,13 +98,16 @@
 					<a href="${link}/icon/font-awesome">Font Awesome</a>
 				</li>
 				<li>
+					<a href="${link}/icon/typeicons">typeicon</a>
+				</li>
+				<li>
 					<a href="${link}/icon/weather-icon">Weather Icon</a>
 				</li>
 			</ul>
 		</li>
 		<li class="panel">
 			<a href="#sidemenu-map" data-toggle="collapse" data-parent="#sidemenu">
-				<i class="fa fa-map-marker"></i> Map
+				<i class="fa fa-fw fa-lg fa-map-marker"></i> Map
 				<i class="pull-right fa fa-chevron-circle-right"></i>
 			</a>
 			<ul id="sidemenu-map" class="nav nav-stacked collapse">
@@ -121,7 +124,7 @@
 		</li>
 		<li class="panel">
 			<a href="#sidemenu-table" data-toggle="collapse" data-parent="#sidemenu">
-				<i class="fa fa-th-list"></i> Table
+				<i class="fa fa-fw fa-lg fa-th-list"></i> Table
 				<i class="pull-right fa fa-chevron-circle-right"></i>
 			</a>
 			<ul id="sidemenu-table" class="nav nav-stacked collapse ${view.startsWith('/theme/table') ? 'in' : ''}">
