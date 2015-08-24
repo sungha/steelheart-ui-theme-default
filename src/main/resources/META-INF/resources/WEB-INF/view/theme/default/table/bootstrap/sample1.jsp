@@ -5,13 +5,16 @@
 <%@ taglib prefix="sec"
 	uri="http://www.springframework.org/security/tags"%>
 
+<div class="jumbotron">
+	<ol class="breadcrumb pull-right">
+		<li><a href="${cl}"><i class="fa fa-home"></i> Home</a></li>
+	</ol>
+	<h1>Dashboard</h1>
+	<small>dashboard</small>
+</div>
 
-bootstrap default table
 
-<hr />
-
-
-<c:forTokens var="color" items="default,primary,success,info,warning,danger,inverse" delims=",">
+<c:forTokens var="color" items="${brands}" delims=",">
 	<div class="panel panel-${color}">
 		<div class="panel-heading">
 			<h4 class="panel-title">Basic Styling: ${color}</h4>

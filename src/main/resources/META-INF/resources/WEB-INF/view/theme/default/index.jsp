@@ -4,7 +4,15 @@
 <%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags"%>
 
 
-themes
+<div class="jumbotron">
+	<ol class="breadcrumb pull-right">
+		<li><a href="${cl}"><i class="fa fa-home"></i> Home</a></li>
+	</ol>
+	<h1>Dashboard</h1>
+	<small>dashboard</small>
+</div>
+
+
 <ul>
 	<li><a href="${ctx}/${lang}/theme/ugly/index">ugly</a></li>
 	<li><a href="${ctx}/${lang}/theme/default/index">default</a></li>
