@@ -10,6 +10,9 @@
 
 	<artifactId>steelheart-ui-theme-default</artifactId>
 
+	<properties>
+		<theme.name>default</theme.name>
+	</properties>
 
 	<build>
 
@@ -21,7 +24,7 @@
 				<configuration>
 					<filesets>
 						<fileset>
-							<directory>${project.basedir}/src/main/resources/META-INF/resources/css</directory>
+							<directory>${project.basedir}/src/main/resources/META-INF/resources/theme/${theme.name}/css</directory>
 						</fileset>
 						<fileset>
 							<directory>${project.basedir}/src/main/resources/META-INF/resources/lib</directory>
@@ -46,11 +49,11 @@
 							<goal>compile</goal>
 						</goals>
 						<configuration>
-							<sourceDirectory>${project.basedir}/src/main/resources/META-INF/resources/less/theme</sourceDirectory>
+							<sourceDirectory>${project.basedir}/src/main/resources/META-INF/resources/theme/${theme.name}/less/theme</sourceDirectory>
 							<includes>
-								<include>default.less</include>
+								<include>theme.less</include>
 							</includes>
-							<outputDirectory>${project.basedir}/src/main/resources/META-INF/resources/css/theme</outputDirectory>
+							<outputDirectory>${project.basedir}/src/main/resources/META-INF/resources/theme/${theme.name}/css/theme</outputDirectory>
 						</configuration>
 					</execution>
 
@@ -61,8 +64,8 @@
 							<goal>compile</goal>
 						</goals>
 						<configuration>
-							<sourceDirectory>${project.basedir}/src/main/resources/META-INF/resources/less/layout</sourceDirectory>
-							<outputDirectory>${project.basedir}/src/main/resources/META-INF/resources/css/layout</outputDirectory>
+							<sourceDirectory>${project.basedir}/src/main/resources/META-INF/resources/theme/${theme.name}/less/layout</sourceDirectory>
+							<outputDirectory>${project.basedir}/src/main/resources/META-INF/resources/theme/${theme.name}/css/layout</outputDirectory>
 						</configuration>
 					</execution>
 
