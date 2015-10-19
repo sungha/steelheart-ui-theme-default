@@ -1,23 +1,38 @@
 
-.container .jumbotron, .container-fluid .jumbotron {
-	border-radius: 0;
-}
+
 
 .jumbotron {
-	margin-left: -20px;
-	margin-right: -20px;
-	
-	padding: 4px 12px 12px 12px !important;
+	padding: 4px 12px 12px 12px;
 	border-bottom: 1px solid #ccc;
-	
+
 	h1 {
 		font-size: 24px !important;
 		letter-spacing: -1px;
 		font-weight: bold;
 		color: #000;
 	}
-	
+
 	small {
 		font-size: 12px;
 	}
 }
+
+
+
+.jumbotron, .jumbotron .container {
+	background-position: center center;
+	background-size: contain;
+}
+
+.jumbotron {
+	height: 150px;
+	padding: 0;
+}
+
+.jumbotron .container {
+	margin: 0 auto;
+	height: 100%;
+}
+
+
+
